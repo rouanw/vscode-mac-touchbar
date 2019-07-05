@@ -4,6 +4,10 @@
 	"description": "Handy shortcuts for js dev on the toolbar",
 	"version": "1.0.0",
 	"publisher": "rouanw",
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/rouanw/vscode-mac-touchbar"
+	},
 	"engines": {
 		"vscode": "^1.36.0"
 	},
