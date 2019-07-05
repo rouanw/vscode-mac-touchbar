@@ -1,0 +1,95 @@
+{
+	"name": "vscode-mac-touchbar",
+	"displayName": "vscode-mac-touchbar",
+	"description": "Handy shortcuts for js dev on the toolbar",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.rename",
+		"onCommand:extension.focusTerminal",
+		"onCommand:extension.refactor",
+		"onCommand:extension.test",
+		"onCommand:extension.install",
+		"onCommand:extension.editor"
+	],
+	"main": "./extension.js",
+	"contributes": {
+    "commands": [
+			{
+				"command": "extension.rename",
+				"title": "📛"
+			},
+			{
+				"command": "extension.focusTerminal",
+				"title": "💻"
+			},
+			{
+				"command": "extension.refactor",
+				"title": "✏️"
+			},
+			{
+				"command": "extension.test",
+				"title": "✅"
+			},
+			{
+				"command": "extension.install",
+				"title": "⬇️"
+			},
+			{
+				"command": "extension.editor",
+				"title": "📄"
+			}
+		],
+		"menus": {
+			"touchBar": [
+				{
+					"command": "extension.test",
+					"group": "mygroup@5"
+				},
+				{
+					"command": "extension.install",
+					"group": "mygroup@4"
+				},
+				{
+					"command": "extension.rename",
+					"group": "mygroup@2",
+					"when": "editorFocus"
+				},
+				{
+					"command": "extension.refactor",
+					"group": "mygroup@3",
+					"when": "editorFocus"
+				},
+				{
+					"command": "extension.focusTerminal",
+					"group": "mygroup@1",
+					"when": "editorFocus"
+				},
+				{
+					"command": "extension.editor",
+					"group": "mygroup@3",
+					"when": "!editorFocus"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"test": "echo no tests"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"eslint": "^5.13.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.0.0-next.0"
+	}
+}
