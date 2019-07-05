@@ -16,10 +16,3 @@ Adds a few handy shortcuts I use to the MacOS touchbar.
 - Requires the `microsoft.npm` extension.
 - You need a MacBook with a touchbar
 
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release.
