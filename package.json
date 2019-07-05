@@ -2,7 +2,8 @@
 	"name": "vscode-mac-touchbar",
 	"displayName": "vscode-mac-touchbar",
 	"description": "Handy shortcuts for js dev on the toolbar",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"publisher": "rouanw",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
@@ -19,7 +20,7 @@
 	],
 	"main": "./extension.js",
 	"contributes": {
-    "commands": [
+		"commands": [
 			{
 				"command": "extension.rename",
 				"title": "📛"
